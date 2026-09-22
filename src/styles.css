@@ -1,0 +1,137 @@
+:root {
+  --kenyon-purple: #9463f7;
+  --kenyon-dark: #1a1523;
+  --ink: #2b2530;
+  --paper: #ffffff;
+  --muted: #6b6470;
+  --border: #e6e1ee;
+  --max-width: 860px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--kenyon-dark);
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+}
+
+.nav-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a {
+  color: #e9e2fb;
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--kenyon-purple);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--kenyon-purple);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.cta:hover {
+  opacity: 0.9;
+}
+
+ul.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.check-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+ul.check-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--kenyon-purple);
+  font-weight: 700;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+a {
+  color: var(--kenyon-purple);
+}
