@@ -1,5 +1,5 @@
 :root {
-  --kenyon-purple: #9463f7;
+  --kenyon-purple: #4b2e84;
   --kenyon-dark: #1a1523;
   --ink: #2b2530;
   --paper: #ffffff;
@@ -37,10 +37,18 @@ header {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
+}
+
+.brand img {
+  height: 2rem;
+  width: auto;
 }
 
 nav a {
