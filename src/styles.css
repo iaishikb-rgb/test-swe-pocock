@@ -37,18 +37,10 @@ header {
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   font-weight: 700;
   font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
-}
-
-.brand img {
-  height: 2rem;
-  width: auto;
 }
 
 nav a {
